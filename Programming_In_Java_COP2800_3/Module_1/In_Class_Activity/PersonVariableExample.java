@@ -1,3 +1,5 @@
+package Programming_In_Java_COP2800_3.Module_1.In_Class_Activity;
+
 public class PersonVariableExample {
     public static void main(String[] args) {
         // Declare and initialize variable

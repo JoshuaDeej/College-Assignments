@@ -1,3 +1,5 @@
+package Programming_In_Java_COP2800_3.Module_1.In_Class_Activity;
+
 public class Person {
     // Attributes
     private String name;
@@ -21,7 +23,7 @@ public class Person {
 
     // Main method to create instances and print their details
     public static void main(String[] args) {
-        // Create two instances of the Person class
+        // Create two instances of the Programming_In_Java_COP2800_3.Module_1.In_Class_Activity.Person class
         Person person1 = new Person("Alice", 30);
         Person person2 = new Person("Bob", 25);
 
