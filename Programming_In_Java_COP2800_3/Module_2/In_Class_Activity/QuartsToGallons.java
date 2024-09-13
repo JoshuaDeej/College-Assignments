@@ -1,3 +1,5 @@
+package Programming_In_Java_COP2800_3.Module_2.In_Class_Activity;
+
 public class QuartsToGallons {
     public static void main(String[] args) {
         // Declare a named constant to hold the number of the quarts in a gallon
