@@ -1,4 +1,4 @@
-package Programming_In_Java_COP2800_3.Module_2;
+package Programming_In_Java_COP2800_3.Module_3.In_Class_Activity;
 
 import java.util.Scanner;
 public class Percentages {
