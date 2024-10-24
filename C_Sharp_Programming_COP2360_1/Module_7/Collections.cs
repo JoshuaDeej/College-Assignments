@@ -4,6 +4,7 @@ using System.Linq;
 
 class Collections
 {
+    // Dictionary to store keys and their associated list of values
     static Dictionary<string, List<string>> myDict = new Dictionary<string, List<string>>();
 
     static void Main()
@@ -12,6 +13,7 @@ class Collections
 
         while (keepRunning)
         {
+            // Display menu options to the user
             Console.WriteLine("\nChoose an option:");
             Console.WriteLine("a. Populate the Dictionary");
             Console.WriteLine("b. Display Dictionary Contents");
@@ -21,8 +23,10 @@ class Collections
             Console.WriteLine("f. Sort the Keys");
             Console.WriteLine("g. Exit");
 
+            // Get user's choice
             char choice = Console.ReadLine()[0];
 
+            // Execute different methods based on user's choice
             switch (choice)
             {
                 case 'a':
@@ -44,7 +48,7 @@ class Collections
                     SortKeys();
                     break;
                 case 'g':
-                    keepRunning = false;
+                    keepRunning = false; // Exit the loop to end the program
                     break;
                 default:
                     Console.WriteLine("Invalid option. Please try again.");
@@ -53,14 +57,16 @@ class Collections
         }
     }
 
+    // Method to populate the dictionary with initial data
     static void PopulateDictionary()
     {
-        // Populate with some data. Modify as needed.
+        // Add some key-value pairs to the dictionary
         myDict["Group1"] = new List<string> { "Value1", "Value2" };
         myDict["Group2"] = new List<string> { "Value3", "Value4" };
         Console.WriteLine("Dictionary populated.");
     }
 
+    // Method to display the contents of the dictionary
     static void DisplayDictionary()
     {
         foreach (var kvp in myDict)
@@ -69,6 +75,7 @@ class Collections
         }
     }
 
+    // Method to remove a key from the dictionary
     static void RemoveKey()
     {
         Console.WriteLine("Enter the key to remove:");
@@ -84,6 +91,7 @@ class Collections
         }
     }
 
+    // Method to add a new key and value to the dictionary
     static void AddNewKeyValue()
     {
         Console.WriteLine("Enter the new key:");
@@ -101,6 +109,7 @@ class Collections
         Console.WriteLine($"Added {value} to key '{key}'.");
     }
 
+    // Method to add a new value to an existing key
     static void AddValueToExistingKey()
     {
         Console.WriteLine("Enter the existing key:");
@@ -120,6 +129,7 @@ class Collections
         }
     }
 
+    // Method to sort the keys in the dictionary and display them
     static void SortKeys()
     {
         var sortedDict = from entry in myDict orderby entry.Key ascending select entry;
