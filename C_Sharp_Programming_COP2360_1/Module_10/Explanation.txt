@@ -1,0 +1,5 @@
+The class will contain basic information about a contractor, such as their name, number, and start date. We'll create one or more constructors, as well as accessor (getter) and mutator (setter) functions.
+
+The subcontractor class will inherit from Contractor and add additional information specific to subcontractors, such as their shift and hourly pay rate.
+
+The program class sets up a simple demonstration where you can create Subcontractor objects and compute their pay with a shift differential for night shift employees. This can be easily modified for more advance functions.
